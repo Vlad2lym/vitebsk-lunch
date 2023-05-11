@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-block {
+    margin: 40px auto;
+    background: linear-gradient(to bottom,#eeecda 0,#f4dfc6 100%);
+    max-width: 1540px;
+}
+
+/* header */
+.info-block-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.info-block-title {
+    display: flex;
+    align-items: center;
+}
+
+.info-title {
+    font-size: 50px;
+}
+
+.info-title-a {
+    margin-left: 7vw;
+}
+
+.info-block-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.info-block-btns__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+/* lunch list */
+.lunch-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.lunch-item {
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lunch-item:hover .lunch-item-price {
+    background-color: red;
+    color: #fff;
+}
+
+.lunch-item-img-a {
+    height: 150px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 38px 0 29px;
+}
+
+.lunch-item-img-a__title {
+    text-shadow: 0 1.5px 1px #000;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.lunch-item-img-a__info {
+    text-shadow: 0 1.5px 1px #000;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+}
+
+.lunch-item-menu {
+    padding: 12px 35px 0 23px;
+    flex: 1;
+}
+
+.lunch-item-menu__dish {
+    list-style-type: none;
+    font: 300 17px/22px;
+    margin-bottom: 15px;
+}
+
+.lunch-item-price {
+    width: fit-content;
+    font-size: 24px;
+    padding: 0 5px;
+    margin: 5px 0 10px 25px;
+}
+
+@media (max-width: 920px) {
+    .info-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 440px) {
+    .info-title {
+        font-size: 20px;
+    }
+    .info-title-a {
+        margin-left: 3vw;
+    }
+}
